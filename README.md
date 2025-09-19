@@ -179,9 +179,6 @@ Global Average Pooling: ✓ PASS
 Transition Layers: ✓ PASS
 Strategic MaxPooling: ✓ PASS
 
-Overall Status: 🎉 ALL REQUIREMENTS MET!
-================================================================================
-EVA4 SESSION 5 COMPLETED SUCCESSFULLY!
 ================================================================================
 ```
 
