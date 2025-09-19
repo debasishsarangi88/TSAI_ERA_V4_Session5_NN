@@ -194,17 +194,6 @@ EVA4 SESSION 5 COMPLETED SUCCESSFULLY!
 - **Model parameters: 18,614** (Target: <20,000)
 - **All requirements successfully met!**
 
-## Key Requirements Achieved
-
-- ✅ **99.4% validation/test accuracy** (50k/10k split)
-- ✅ **<20,000 parameters**
-- ✅ **<20 epochs training**
-- ✅ **Batch Normalization** after every conv layer
-- ✅ **Dropout** (0.1) for regularization
-- ✅ **Global Average Pooling** instead of FC layers
-- ✅ **Transition layers** (1x1 convolutions)
-- ✅ **Strategic MaxPooling** placement
-
 ## 🏗️ Network Architecture
 
 ### Architecture Diagram
