@@ -31,7 +31,7 @@ Epoch 13: Train Acc: 99.22%, Val Acc: 99.34%
 Epoch 14: Train Acc: 99.27%, Val Acc: 99.38%
 Epoch 15: Train Acc: 99.29%, Val Acc: 99.37%
 Epoch 16: Train Acc: 99.34%, Val Acc: 99.38%
-Epoch 17: Train Acc: 99.25%, Val Acc: 99.40% 🎯 TARGET ACHIEVED!
+Epoch 17: Train Acc: 99.25%, Val Acc: 99.40% 
 ```
 
 ## 📊 **DETAILED TEST LOGS**
