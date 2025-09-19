@@ -4,7 +4,7 @@
 
 This project implements an optimized Convolutional Neural Network (CNN) for MNIST digit classification, achieving **99.4%+ accuracy** with **<20,000 parameters** in **<20 epochs**.
 
-## 🎯 **TRAINING RESULTS - ALL TARGETS ACHIEVED!**
+
 
 ### Final Performance Metrics
 - **Validation Accuracy: 99.40%** (Target: 99.4%)
