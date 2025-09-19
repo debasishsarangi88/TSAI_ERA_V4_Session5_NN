@@ -155,7 +155,7 @@ Epoch 12 - Loss: 0.0328 - Acc: 99.11%: 100%|████████████
 Validation set: Average loss: 0.0277, Accuracy: 9941/10000 (99.41%)
 Epoch 12: Train Loss: 0.0513, Train Acc: 99.11%, Val Acc: 99.41%
 
-🎯 TARGET ACHIEVED! Validation accuracy: 99.41%
+Validation accuracy: 99.41%
 
 ============================================================
 FINAL RESULTS
