@@ -34,6 +34,166 @@ Epoch 16: Train Acc: 99.34%, Val Acc: 99.38%
 Epoch 17: Train Acc: 99.25%, Val Acc: 99.40% 🎯 TARGET ACHIEVED!
 ```
 
+## 📊 **DETAILED TEST LOGS**
+
+### Complete Training and Testing Output
+```
+================================================================================
+EVA4 SESSION 5 - OPTIMIZED MNIST CLASSIFICATION
+================================================================================
+Using device: cpu
+
+============================================================
+MODEL ARCHITECTURE VERIFICATION
+============================================================
+Model: OptimizedNet
+Total parameters: 18,614
+Target: <20,000 parameters
+Parameter Status: ✓ PASS
+
+Model Architecture Summary:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 8, 28, 28]              80
+       BatchNorm2d-2            [-1, 8, 28, 28]              16
+            Conv2d-3            [-1, 8, 28, 28]             584
+       BatchNorm2d-4            [-1, 8, 28, 28]              16
+         MaxPool2d-5            [-1, 8, 14, 14]               0
+           Dropout-6            [-1, 8, 14, 14]               0
+            Conv2d-7           [-1, 16, 14, 14]           1,168
+       BatchNorm2d-8           [-1, 16, 14, 14]              32
+            Conv2d-9           [-1, 16, 14, 14]           2,320
+      BatchNorm2d-10           [-1, 16, 14, 14]              32
+        MaxPool2d-11             [-1, 16, 7, 7]               0
+          Dropout-12             [-1, 16, 7, 7]               0
+           Conv2d-13             [-1, 32, 7, 7]           4,640
+      BatchNorm2d-14             [-1, 32, 7, 7]              64
+           Conv2d-15             [-1, 32, 7, 7]           9,248
+      BatchNorm2d-16             [-1, 32, 7, 7]              64
+        MaxPool2d-17             [-1, 32, 3, 3]               0
+          Dropout-18             [-1, 32, 3, 3]               0
+           Conv2d-19             [-1, 10, 3, 3]             330
+      BatchNorm2d-20             [-1, 10, 3, 3]              20
+AdaptiveAvgPool2d-21             [-1, 10, 1, 1]               0
+================================================================
+Total params: 18,614
+Trainable params: 18,614
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.38
+Params size (MB): 0.07
+Estimated Total Size (MB): 0.45
+----------------------------------------------------------------
+
+============================================================
+DATA PREPARATION
+============================================================
+Training samples: 50000
+Validation samples: 10000
+Test samples: 10000
+Batch size: 128
+
+============================================================
+TRAINING SETUP
+============================================================
+Optimizer: Adam (lr=0.001, weight_decay=1e-4)
+Scheduler: StepLR (step=7, gamma=0.1)
+Max epochs: 20
+Target accuracy: 99.4%
+
+============================================================
+TRAINING LOOP
+============================================================
+Epoch 1 - Loss: 0.3927 - Acc: 89.79%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.47it/s]
+
+Validation set: Average loss: 0.2843, Accuracy: 9707/10000 (97.07%)
+Epoch  1: Train Loss: 0.7703, Train Acc: 89.79%, Val Acc: 97.07%
+Epoch 2 - Loss: 0.1882 - Acc: 97.16%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.40it/s]
+
+Validation set: Average loss: 0.1565, Accuracy: 9812/10000 (98.12%)
+Epoch  2: Train Loss: 0.2721, Train Acc: 97.16%, Val Acc: 98.12%
+Epoch 3 - Loss: 0.1741 - Acc: 97.95%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.37it/s]
+
+Validation set: Average loss: 0.0845, Accuracy: 9884/10000 (98.84%)
+Epoch  3: Train Loss: 0.1708, Train Acc: 97.95%, Val Acc: 98.84%
+Epoch 4 - Loss: 0.2215 - Acc: 98.27%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.47it/s]
+
+Validation set: Average loss: 0.0689, Accuracy: 9880/10000 (98.80%)
+Epoch  4: Train Loss: 0.1260, Train Acc: 98.27%, Val Acc: 98.80%
+Epoch 5 - Loss: 0.1202 - Acc: 98.45%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.56it/s]
+
+Validation set: Average loss: 0.0504, Accuracy: 9917/10000 (99.17%)
+Epoch  5: Train Loss: 0.0991, Train Acc: 98.45%, Val Acc: 99.17%
+Epoch 6 - Loss: 0.1741 - Acc: 98.61%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.40it/s]
+
+Validation set: Average loss: 0.0423, Accuracy: 9915/10000 (99.15%)
+Epoch  6: Train Loss: 0.0833, Train Acc: 98.61%, Val Acc: 99.15%
+Epoch 7 - Loss: 0.0814 - Acc: 98.68%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.20it/s]
+
+Validation set: Average loss: 0.0401, Accuracy: 9907/10000 (99.07%)
+Epoch  7: Train Loss: 0.0710, Train Acc: 98.68%, Val Acc: 99.07%
+Epoch 8 - Loss: 0.0353 - Acc: 99.01%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.17it/s]
+
+Validation set: Average loss: 0.0306, Accuracy: 9932/10000 (99.32%)
+Epoch  8: Train Loss: 0.0562, Train Acc: 99.01%, Val Acc: 99.32%
+Epoch 9 - Loss: 0.1322 - Acc: 99.07%: 100%|███████████████████████████████| 391/391 [00:21<00:00, 18.26it/s]
+
+Validation set: Average loss: 0.0302, Accuracy: 9930/10000 (99.30%)
+Epoch  9: Train Loss: 0.0543, Train Acc: 99.07%, Val Acc: 99.30%
+Epoch 10 - Loss: 0.0519 - Acc: 99.07%: 100%|██████████████████████████████| 391/391 [00:21<00:00, 18.49it/s]
+
+Validation set: Average loss: 0.0282, Accuracy: 9936/10000 (99.36%)
+Epoch 10: Train Loss: 0.0519, Train Acc: 99.07%, Val Acc: 99.36%
+Epoch 11 - Loss: 0.0386 - Acc: 99.09%: 100%|██████████████████████████████| 391/391 [00:22<00:00, 17.20it/s]
+
+Validation set: Average loss: 0.0284, Accuracy: 9936/10000 (99.36%)
+Epoch 11: Train Loss: 0.0507, Train Acc: 99.09%, Val Acc: 99.36%
+Epoch 12 - Loss: 0.0328 - Acc: 99.11%: 100%|██████████████████████████████| 391/391 [00:22<00:00, 17.26it/s]
+
+Validation set: Average loss: 0.0277, Accuracy: 9941/10000 (99.41%)
+Epoch 12: Train Loss: 0.0513, Train Acc: 99.11%, Val Acc: 99.41%
+
+🎯 TARGET ACHIEVED! Validation accuracy: 99.41%
+
+============================================================
+FINAL RESULTS
+============================================================
+Best Validation Accuracy: 99.41%
+Target: 99.4%
+Accuracy Status: ✓ PASS
+Epochs used: 12
+Epoch Status: ✓ PASS
+
+Test set: Average loss: 0.0279, Accuracy: 9936/10000 (99.36%)
+Final Test Accuracy: 99.36%
+
+============================================================
+REQUIREMENTS VERIFICATION
+============================================================
+Parameters < 20,000: ✓ PASS
+Accuracy ≥ 99.4%: ✓ PASS
+Epochs < 20: ✓ PASS
+Batch Normalization: ✓ PASS
+Dropout: ✓ PASS
+Global Average Pooling: ✓ PASS
+Transition Layers: ✓ PASS
+Strategic MaxPooling: ✓ PASS
+
+Overall Status: 🎉 ALL REQUIREMENTS MET!
+================================================================================
+EVA4 SESSION 5 COMPLETED SUCCESSFULLY!
+================================================================================
+```
+
+### Test Accuracy Summary
+- **Final Test Accuracy: 99.36%**
+- **Validation Accuracy: 99.41%** (Target: 99.4%)
+- **Training completed in 12 epochs** (Target: <20)
+- **Model parameters: 18,614** (Target: <20,000)
+- **All requirements successfully met!**
+
 ## Key Requirements Achieved
 
 - ✅ **99.4% validation/test accuracy** (50k/10k split)
@@ -108,18 +268,15 @@ Total Parameters: 18,614
 Session5/
 ├── EVA4_Session_5.ipynb        # Main training notebook
 ├── EVA4_Session_5.py           # Complete Python script version
-├── train_model.py              # Training script
-├── test_model.py               # Model validation script
-├── quick_test.py               # Quick convergence test
 ├── architecture_diagram_fixed.py # Clean architecture diagram generator
-├── config.py                   # Configuration parameters
 ├── requirements.txt            # Python dependencies
-├── training_results.txt        # Complete training output
 ├── network_architecture_clean.png # Clean architecture diagram (PNG)
 ├── network_architecture_clean.pdf # Clean architecture diagram (PDF)
 ├── best_model.pth              # Saved best model (after training)
 ├── README.md                   # This file
-└── SUMMARY.md                  # Project summary
+├── SUMMARY.md                  # Project summary
+├── pyproject.toml              # UV project configuration
+└── uv.lock                     # UV lock file
 ```
 
 ## 🚀 Installation & Usage
@@ -140,32 +297,17 @@ pip install -r requirements.txt
 
 ### Running the Project
 
-1. **Test the model architecture:**
-```bash
-python test_model.py
-```
-
-2. **Quick convergence test:**
-```bash
-python quick_test.py
-```
-
-3. **Full training:**
-```bash
-python train_model.py
-```
-
-4. **Generate clean architecture diagram:**
+1. **Generate clean architecture diagram:**
 ```bash
 uv run python architecture_diagram_fixed.py
 ```
 
-5. **Run the complete Python script:**
+2. **Run the complete Python script:**
 ```bash
 uv run python EVA4_Session_5.py
 ```
 
-6. **Run the notebook:**
+3. **Run the notebook:**
 ```bash
 jupyter notebook EVA4_Session_5.ipynb
 ```
