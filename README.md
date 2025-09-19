@@ -251,23 +251,6 @@ Total Parameters: 18,614
 - **Efficiency**: Through GAP and transition layers
 - **Memory Usage**: 0.45 MB total
 
-## 📁 File Structure
-
-```
-Session5/
-├── EVA4_Session_5.ipynb        # Main training notebook
-├── EVA4_Session_5.py           # Complete Python script version
-├── architecture_diagram_fixed.py # Clean architecture diagram generator
-├── requirements.txt            # Python dependencies
-├── network_architecture_clean.png # Clean architecture diagram (PNG)
-├── network_architecture_clean.pdf # Clean architecture diagram (PDF)
-├── best_model.pth              # Saved best model (after training)
-├── README.md                   # This file
-├── SUMMARY.md                  # Project summary
-├── pyproject.toml              # UV project configuration
-└── uv.lock                     # UV lock file
-```
-
 ## Training Configuration
 
 - **Optimizer**: Adam (lr=0.001, weight_decay=1e-4)
