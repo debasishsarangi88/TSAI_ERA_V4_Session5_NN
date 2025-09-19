@@ -268,39 +268,6 @@ Session5/
 └── uv.lock                     # UV lock file
 ```
 
-## 🚀 Installation & Usage
-
-### Virtual Environment Setup
-```bash
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-source venv/bin/activate  # On macOS/Linux
-# or
-venv\Scripts\activate     # On Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Running the Project
-
-1. **Generate clean architecture diagram:**
-```bash
-uv run python architecture_diagram_fixed.py
-```
-
-2. **Run the complete Python script:**
-```bash
-uv run python EVA4_Session_5.py
-```
-
-3. **Run the notebook:**
-```bash
-jupyter notebook EVA4_Session_5.ipynb
-```
-
 ## Training Configuration
 
 - **Optimizer**: Adam (lr=0.001, weight_decay=1e-4)
