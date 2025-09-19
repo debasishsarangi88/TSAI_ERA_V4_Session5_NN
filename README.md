@@ -162,9 +162,7 @@ FINAL RESULTS
 ============================================================
 Best Validation Accuracy: 99.41%
 Target: 99.4%
-Accuracy Status: ✓ PASS
 Epochs used: 12
-Epoch Status: ✓ PASS
 
 Test set: Average loss: 0.0279, Accuracy: 9936/10000 (99.36%)
 Final Test Accuracy: 99.36%
