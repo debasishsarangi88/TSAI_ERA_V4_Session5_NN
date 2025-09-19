@@ -7,11 +7,11 @@ This project implements an optimized Convolutional Neural Network (CNN) for MNIS
 ## 🎯 **TRAINING RESULTS - ALL TARGETS ACHIEVED!**
 
 ### Final Performance Metrics
-- **✅ Validation Accuracy: 99.40%** (Target: 99.4%)
-- **✅ Test Accuracy: 99.29%**
-- **✅ Total Parameters: 18,614** (Target: <20,000)
-- **✅ Training Epochs: 17** (Target: <20)
-- **✅ Model Size: 0.45 MB**
+- **Validation Accuracy: 99.40%** (Target: 99.4%)
+- **Test Accuracy: 99.29%**
+- **Total Parameters: 18,614** (Target: <20,000)
+- **Training Epochs: 17** (Target: <20)
+- **Model Size: 0.45 MB**
 
 ### Training Progress Summary
 ```
