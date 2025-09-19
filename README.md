@@ -326,13 +326,6 @@ Total Parameters: 18,614
 4. **Optimization**: Adam with proper scheduling for fast convergence
 5. **Early Stopping**: Prevents overfitting and saves time
 
-## Troubleshooting
-
-- Ensure CUDA is available for GPU training
-- Check data download path in config
-- Verify all dependencies are installed
-- Monitor training progress for convergence
-
 ## Future Improvements
 
 - Data augmentation for better generalization
